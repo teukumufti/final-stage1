@@ -13,7 +13,9 @@
     "nodemon": "^2.0.15",
     "pg": "^8.7.3"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "dotenv": "^16.0.0"
+  },
   "scripts": {
     "start": "nodemon node index.js"
   },

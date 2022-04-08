@@ -10,7 +10,7 @@ if (process.env.DEV) {
     password: "admin",
   });
 } else {
-  client = new Client({
+  client = new Pool({
     connectionString: process.env.DATABASE_URL,
     ssl: {
       rejectUnauthorized: false,

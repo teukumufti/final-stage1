@@ -1,0 +1,145 @@
+.home-container {
+  padding-top: 100px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.section-style {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid black;
+  margin-right: 120px;
+  margin-left: 120px;
+  padding: 60px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 25px rgb(5, 5, 5);
+}
+
+.text-download {
+  display: flex;
+}
+div .text-download p {
+  margin-left: 20px;
+  margin-top: 25px;
+}
+
+.avg-download {
+  cursor: pointer;
+  width: 20px;
+}
+.btn-contact {
+  width: 100px;
+}
+
+.sosmed {
+  display: flex;
+  margin-top: 10px;
+  padding-top: 20px;
+  text-align: center;
+}
+
+.img-style {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-left: 100px;
+}
+
+.img-elon {
+  text-align: center;
+  border-radius: 5px;
+  padding-bottom: 0px;
+  box-shadow: 0px 0px 10px black;
+}
+
+.card-img-top {
+  box-shadow: 0px 0px 0px black;
+  width: 270px;
+  border-radius: 8px;
+  margin-top: 8px;
+  margin-left: 8px;
+}
+
+.card {
+  margin-top: 100px;
+  box-shadow: 0px 0px 10px black;
+}
+
+.ms {
+  text-align: center;
+  margin-top: 150px;
+  background-color: rgb(229, 233, 235);
+  width: 100%;
+  padding-bottom: 50px;
+}
+
+.text {
+  text-decoration: none;
+  color: rgb(221, 204, 126);
+}
+
+.box-project {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+
+.blog-detail {
+  padding-bottom: 13px;
+  box-shadow: 0px 0px 20px rgb(5, 5, 5);
+  border-radius: 8px;
+}
+
+.style-imageBlogDetail {
+  margin-left: 0px;
+  max-width: 280px;
+  height: auto;
+  margin-top: 8px;
+  border-radius: 8px;
+  box-shadow: 0px 0px 0px rgb(5, 5, 5);
+}
+
+.style-icons {
+  display: flex;
+  margin-left: 12px;
+  margin-top: 10px;
+}
+
+.style-buttonBlogDetails {
+  display: flex;
+  justify-content: center;
+}
+
+.style-buttonEdit {
+  margin-right: 5px;
+  background-color: black;
+  color: white;
+  margin-top: 20px;
+  border: none;
+  width: 120px;
+  padding: 3px 3px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+.style-buttonEdit:active {
+  background-color: white;
+  color: black;
+}
+
+.style-buttonDelete {
+  margin-left: 0;
+  background-color: black;
+  color: white;
+  margin-top: 20px;
+  border: none;
+  width: 120px;
+  padding: 3px 3px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+.style-buttonDelete:active {
+  background-color: white;
+  color: black;
+}

@@ -1,0 +1,22 @@
+{
+  "name": "chapter-2",
+  "version": "1.0.0",
+  "description": "Learning nodejs",
+  "main": "index.js",
+  "dependencies": {
+    "bcrypt": "^5.0.1",
+    "express": "^4.17.3",
+    "express-flash": "0.0.2",
+    "express-session": "^1.17.2",
+    "hbs": "^4.2.0",
+    "multer": "^1.4.4",
+    "nodemon": "^2.0.15",
+    "pg": "^8.7.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "nodemon node index.js"
+  },
+  "author": "Teuku Mufti",
+  "license": "ISC"
+}

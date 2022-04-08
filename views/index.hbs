@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Home</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/public/navbar.css" />
+    <link rel="stylesheet" href="/public/styleHome.css" />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <nav
+      class="navbar navbar-expand-lg navbar-light bg-light position-fixed w-100"
+    >
+      <div class="container-fluid">
+        <a class="navbar-brand" href="/home"
+          ><img class="img-dumbways" src="/public/asset/dumbways.png"
+        /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/home"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link active"
+                aria-current="page"
+                href="/project"
+                >Add Projects</a
+              >
+            </li>
+          </ul>
+          {{#if isLogin}}
+              <a
+              class="nav-link active text-black pt-0 pb-0"
+              aria-current="page"
+              href="#"
+              >Hallo {{user.name}}</a>
+              <a
+              class="nav-link active text-danger pt-0 pb-0"
+              aria-current="page"
+              href="/logout"
+              >Logout</a>
+            
+          {{else}}
+             <a
+              class="nav-link active text-black pt-0 pb-0"
+              aria-current="page"
+              href="/register"
+              >Register</a>
+            <a
+              class="nav-link active text-black pt-0 pb-0 me-4"
+              aria-current="page"
+              href="/login"
+              >Login</a
+            >
+            {{/if}}
+          <button class="btn text-white bg-orange pt-0 pb-1" type="submit">
+            <a
+              class="nav-link active text-white pt-0 pb-0"
+              aria-current="page"
+              href="/contact"
+              >Contact Me</a
+            >
+          </button>
+        </div>
+      </div>
+    </nav>
+
+     {{#if messages.success}}
+          <div class="alert alert-succsess" role="alert">
+          {{messages.succsess}}
+          </div>
+        {{/if}}
+    <!--  -->
+    <div class="container-fluid home-container">
+      <section>
+        <div class="section-style">
+          <div>
+            <div>
+              <div>
+                <h2>Hi Welcome to my profile</h2>
+                <p
+                  style="
+                    font-size: 10px;
+                    font-weight: bold;
+                    text-align: justify;
+                  "
+                >
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. In
+                  similique repellat molestiae veritatis iusto soluta totam
+                  expedita delectus, nam tenetur eligendi! Mollitia, officia.
+                  Minima est officiis eveniet earum ab quisquam? Lorem ipsum
+                  dolor sit amet consectetur, adipisicing elit. Consectetur
+                  debitis dolorem dolores distinctio rem vero temporibus culpa
+                  soluta, ipsa qui voluptate at nesciunt sed minima rerum
+                  cupiditate reiciendis? Maxime, animi.
+                </p>
+              </div>
+              <div class="text-download">
+                <div style="margin-top: 20px">
+                  <button
+                    class="bg-black text-white"
+                    style="
+                      border-radius: 10px;
+                      background-color: black;
+                      color: gainsboro;
+                      border-color: black;
+                      border-width: 5px;
+                      padding-right: 25px;
+                      padding-left: 25px;
+                      cursor: pointer;
+                    "
+                  >
+                    Contact
+                  </button>
+                </div>
+
+                <div class="text-download">
+                  <p class="mt-4">Download CV</p>
+                  <botton style="margin-top: 13px; margin-left: 17px">
+                    <img
+                      src="/public/asset/donwload.png"
+                      alt="gambar download"
+                      class="avg-download mt-3"
+                    />
+                  </botton>
+                </div>
+              </div>
+
+              <div class="sosmed">
+                <div>
+                  <a href="https://www.linkedin.com/">
+                    <img
+                      src="/public/asset/link.svg"
+                      alt="icon linked"
+                      width="30px"
+                      style="margin-right: 10px; cursor: pointer"
+                    />
+                  </a>
+                </div>
+                <div>
+                  <a href="https://www.instagram.com/">
+                    <img
+                      src="/public/asset/insta.svg"
+                      alt="icon instagram"
+                      width="30px"
+                      style="margin-right: 10px; cursor: pointer"
+                    />
+                  </a>
+                </div>
+                <div>
+                  <a href="https://www.facebook.com/">
+                    <img
+                      src="/public/asset/face.svg"
+                      alt="icon facebook"
+                      width="30px"
+                      style="margin-right: 10px; cursor: pointer"
+                    />
+                  </a>
+                </div>
+                <div>
+                  <a href="https://twitter.com/">
+                    <img
+                      src="/public/asset/twiter.svg"
+                      alt="icon twitter"
+                      width="30px"
+                      style="margin-right: 10px; cursor: pointer"
+                    />
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="img-style">
+            <div class="img-elon">
+              <img
+                src="/public/asset/elon.jpg"
+                alt="gambar elon musk"
+                width="180px"
+              />
+              <strong>Elon Musk</strong>
+              <p>Mars Humans</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <!-- my project -->
+    <div class="ms">
+      <div class="ms-5">
+        <p class="h2 pt-3">My Projects</p>
+      
+      <div class="d-flex flex-wrap" id="box-projects">
+        {{!-- project 1 --}}
+        {{!-- <div style="width: 295px; margin-left: 40px">
+          <div style="margin-top: 100px">
+            <div class="blog-detail">
+              <div>
+                <img
+                  src="/public/asset/mobileapp.jpeg"
+                  class="style-imageBlogDetail"
+                  alt="image phone"
+                />
+              </div>
+              <div>
+                <div>
+                  <h5>Dumbways Mobile-App</h5>
+                  <p style="color: gray; margin-bottom: 10px">durasi</p>
+                </div>
+                <div>
+                  <p>
+                    App that used for dumbways student, it was deployed and can
+                    downloaded on playstore. Happy download
+                  </p>
+                  <a
+                    href="/project-detail/:id"
+                    style="color: rgb(152, 155, 95); text-decoration: none"
+                    ><p
+                      style="
+                        font-size: 13px;
+                        margin-bottom: 17px;
+                        margin-top: 10px;
+                      "
+                    >
+                      click here for detail
+                    </p></a
+                  >
+                  <div>
+                    <span
+                      style="margin-left: 200px; color: gray; font-size: 10px"
+                      >1 day ago</span
+                    >
+                  </div>
+                </div>
+              </div>
+              <div class="style-icons">
+                <div>
+                  <i class="bx bxl-nodejs"></i>
+                </div>
+                <div>
+                  <i class="bx bxl-javascript"></i>
+                </div>
+                <div>
+                  <i class="bx bxl-react"></i>
+                </div>
+                <div>
+                  <i class="bx bxl-vuejs"></i>
+                </div>
+              </div>
+              <div class="style-buttonBlogDetails">
+                <div>
+                  <button class="style-buttonEdit">edit</button>
+                </div>
+                <div>
+                  <button class="style-buttonDelete">delete</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div> --}}
+        {{!-- project 2 --}}
+        {{#each projects}}
+        <div style="width: 295px; margin-left: 40px">
+          <div style="margin-top: 100px">
+            <div class="blog-detail">
+              <div>
+                <img
+                  src="/uploads/{{this.image}}"
+                  class="style-imageBlogDetail"
+                  alt="image project"
+                />
+              </div>
+              <div>
+                <div>
+                  <h5 style="margin-top: 10px">{{this.name}}</h5>
+                  <p style="color: gray; margin-bottom: 10px">{{this.start_date}} | {{this.end_date}}</p>
+                </div>
+                <p style="color: gray; text-align: right; margin-right: 20px">{{this.author}}</p>
+                <div>
+                  <p>
+                    {{this.content}}
+                  </p>
+                  <a
+                    href="/project-detail/{{this.id}}" target="_blank"
+                    style="color: rgb(152, 155, 95); text-decoration: none"
+                    ><p
+                      style="
+                        font-size: 13px;
+                        margin-bottom: 17px;
+                        margin-top: 10px;
+                      "
+                    >
+                      click here for detail
+                    </p></a
+                  >
+                  <div>
+                    <span
+                      style="margin-left: 200px; color: gray; font-size: 10px"
+                      >{{this.duration}}</span
+                    >
+                  </div>
+                </div>
+              </div>
+              <div class="style-icons">
+                <div>
+                  {{#if nodeJs}}
+                  <i class="bx bxl-nodejs"></i>
+                  {{/if}}
+                </div>
+                <div>
+                 {{#if javascripts}}
+                  <i class="bx bxl-javascript"></i>
+                  {{/if}}
+                </div>
+                <div>
+                  {{#if reactJs}}
+                  <i class="bx bxl-react"></i>
+                  {{/if}}
+                </div>
+                <div>
+                  {{#if vueJs}}
+                  <i class="bx bxl-vuejs"></i>
+                  {{/if}}
+                </div>
+              </div>
+              <div class="style-buttonBlogDetails">
+                <div>
+                  <button class="style-buttonEdit"><a href="/update-project/{{this.id}}" style="text-decoration: none; color: white">edit</a></button>
+                </div>
+                <div>
+                  <button class="style-buttonDelete"><a href="/delete-project/{{this.id}}" style="text-decoration: none; color: white">delete</a></button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        {{/each}}
+      </div>
+     
+      {{!--  --}}
+      </div>
+    </div>
+
+  </body>
+</html>

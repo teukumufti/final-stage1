@@ -1,0 +1,30 @@
+body {
+  background-color: #e8e8e8;
+}
+
+.page {
+  padding-top: 100px;
+  text-align: center;
+}
+
+.contentDetails {
+  display: flex;
+  margin-top: 60px;
+  margin-left: 120px;
+  /* justify-content: center; */
+}
+h4 {
+  margin-right: 100px;
+}
+
+.textDetails {
+  display: flex;
+  flex-direction: column;
+  margin-left: 60px;
+}
+
+.style-icons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}

@@ -13,7 +13,7 @@ if (process.env.DEV) {
   client = new Client({
     connectionString: process.env.DATABASE_URL,
     ssl: {
-      rejectUnauthorized: true,
+      rejectUnauthorized: false,
     },
   });
 }
